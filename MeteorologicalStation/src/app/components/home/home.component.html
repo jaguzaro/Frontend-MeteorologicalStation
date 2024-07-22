@@ -1,0 +1,23 @@
+<div class="sections-container d-flex justify-content-center align-items-end">
+    <span style="z-index: 9999; cursor: pointer;" #slide id="slide" class="mb-4" (click)="nextSection()">
+      <fa-icon [icon]="faAnglesDown" size="xl" style="color: white;"></fa-icon>
+    </span>
+    <div class="section" [@slideUpDown]="currentSectionIndex === 0 ? 'visible' : 'hidden'">
+      <app-weather-sensor class="w-100"></app-weather-sensor>
+    </div>
+    <div class="section" style="background-color: green;" [@slideUpDown]="currentSectionIndex === 1 ? 'visible' : 'hidden'">
+      <app-humidity-sensor class="w-100"></app-humidity-sensor>
+    </div>
+    <div class="section" style="background-color: gray;" [@slideUpDown]="currentSectionIndex === 2 ? 'visible' : 'hidden'">
+      <app-wind-sensor class="w-100"></app-wind-sensor>
+    </div>
+    <div class="section" style="background-color: blue;" [@slideUpDown]="currentSectionIndex === 3 ? 'visible' : 'hidden'">
+      <app-atpress-sensor class="w-100"></app-atpress-sensor>
+    </div>
+    <div class="section" [@slideUpDown]="currentSectionIndex === 4 ? 'visible' : 'hidden'">
+      <app-luminosity-sensor class="w-100"></app-luminosity-sensor>
+    </div>
+    <div class="section" [@slideUpDown]="currentSectionIndex === 5 ? 'visible' : 'hidden'">
+      <app-wind-speed-sensor class="w-100"></app-wind-speed-sensor>
+    </div>
+</div>

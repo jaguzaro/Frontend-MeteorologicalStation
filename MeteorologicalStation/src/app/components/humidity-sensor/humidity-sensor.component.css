@@ -1,0 +1,73 @@
+.bkg-section1{
+    background-image: url('../../../assets/img/humiditybk.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .bkg-section1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .bkg-white{
+    height: 100vh;
+    background-color: rgba(255,255,255,0.7);
+    position: relative;
+    z-index: 2;
+  }
+  
+  .degrees-label{
+    font-weight: bold;
+    font-size: 8em;
+    color: white;
+  }
+  
+  .normal-text{
+    font-size: 1em;
+    color: white;
+  }
+  
+  label{
+    z-index: 2;
+    position: relative;
+  }
+  
+  .location-text{
+    transform: translateY(-100%);
+  }
+  
+  .top-text{
+    color: #572525;
+  }
+  
+  .calc-name{
+    color: #572525;
+    font-size: 1.8rem;
+  }
+  
+  .calc-value{
+    font-weight: bold;
+    color: #572525;
+    font-size: 2.5rem;
+  }
+  
+  .calc-date{
+    color: #572525;
+    font-size: 1.4rem
+  }
+  
+  .icon-color-weather{
+    color: #572525;
+  }
+  
+  .separator{
+    border-bottom: 2px solid rgb(153, 153, 153);
+  }

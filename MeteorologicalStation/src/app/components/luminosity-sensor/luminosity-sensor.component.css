@@ -1,0 +1,109 @@
+.bkg-section1{
+    background-image: url('../../../assets/img/luminositybk.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+.new-bkg-section1{
+    background-image: url('../../../assets/img/luminositybk3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  
+  .bkg-section1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .bkg-white{
+    height: 100vh;
+    background-color: rgba(255,255,255,0.7);
+    position: relative;
+    z-index: 2;
+  }
+  
+  .degrees-label{
+    font-weight: bold;
+    font-size: 8em;
+    color: white;
+  }
+  
+  .normal-text{
+    font-size: 1em;
+    color: white;
+  }
+  
+  label{
+    z-index: 2;
+    position: relative;
+  }
+  
+  .location-text{
+    transform: translateY(-100%);
+  }
+  
+  .top-text-sunny{
+    color: #492f00;
+  }
+  
+  .calc-name-sunny{
+    color: #492f00;
+    font-size: 1.8rem;
+  }
+  
+  .calc-value-sunny{
+    font-weight: bold;
+    color: #492f00;
+    font-size: 5rem;
+  }
+  
+  .calc-date-sunny{
+    color: #492f00;
+    font-size: 1.4rem
+  }
+  
+  .icon-color-weather{
+    color: #32301f;
+  }
+  
+  .separator{
+    border-bottom: 2px solid rgb(153, 153, 153);
+  }
+
+  .fade {
+    animation: fadeEffect 1s;
+  }
+  
+  @keyframes fadeEffect {
+    from { opacity: 0.5; }
+    to { opacity: 1; }
+  }
+
+  .top-text-cloudy{
+    color: #ffe837;
+  }
+  
+  .calc-name-cloudy{
+    color: #492f00;
+    font-size: 1.8rem;
+  }
+  
+  .calc-value-cloudy{
+    font-weight: bold;
+    color: #492f00;
+    font-size: 5rem;
+  }
+  
+  .calc-date-cloudy{
+    color: #492f00;
+    font-size: 1.4rem
+  }

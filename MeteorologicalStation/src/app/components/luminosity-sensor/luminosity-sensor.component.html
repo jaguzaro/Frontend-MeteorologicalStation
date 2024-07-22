@@ -1,0 +1,52 @@
+<div
+  class="col-12 bkg-section1 px-0"
+  [ngClass]="{ 'new-bkg-section1': isBackgroundChanged, fade: isFading }"
+  (animationend)="onAnimationEnd()"
+>
+  <div class="row">
+    <div class="col-12 d-grid align-items-center" style="height: 100vh">
+      <div class="row h-100">
+        <div class="col-1"></div>
+        <div class="col-10">
+          <div class="row pt-5 ps-5" style="height: 17%">
+            <div class="col-12">
+              <p class="mb-0 text-center">
+                <label
+                    [ngClass]="{'top-text-sunny': !isBackgroundChanged, 'top-text-cloudy': isBackgroundChanged}"
+                  style="font-size: 2rem; font-weight: bold"
+                  >Miercoles</label
+                >
+              </p>
+              <p class="text-center"><label [ngClass]="{'top-text-sunny': !isBackgroundChanged, 'top-text-cloudy': isBackgroundChanged}">Junio 2024</label></p>
+            </div>
+          </div>
+          <div class="row pt-5 ps-5" style="height: 40%">
+            <div class="col-12">
+              <p class="text-center">
+                <label
+                  [ngClass]="{'top-text-sunny': !isBackgroundChanged, 'top-text-cloudy': isBackgroundChanged}"
+                  style="font-weight: bold; font-size: 6rem"
+                  >Sensor de Luminosidad</label
+                >
+              </p>
+            </div>
+          </div>
+          <div class="row ps-5">
+            <div class="col-12 px-0">
+              <p class="my-0 text-center">
+                <label class="degrees-label" (click)="changeBackground()"
+                  >{{state}}</label
+                >
+              </p>
+              <p class="location-text text-center" style="z-index: 2; position: relative">
+                <label class="normal-text ps-3"
+                  >Facultad de Ingenieria, T-3</label
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

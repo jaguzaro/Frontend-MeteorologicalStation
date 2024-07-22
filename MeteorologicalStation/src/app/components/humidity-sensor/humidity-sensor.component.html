@@ -1,0 +1,48 @@
+<div class="col-12 bkg-section1 px-0">
+    <div class="row">
+      <div class="col-7 d-grid align-items-center" style="height: 100vh;">
+        <div class="row h-100">
+          <div class="col-1"></div>
+          <div class="col-10">
+            <div class="row pt-5 ps-5" style="height: 17%;">
+              <div class="col-12">
+                <p class="mb-0"><label class="top-text" style="font-size: 2rem; font-weight: bold;">Miercoles</label></p>
+                <p><label class="top-text">Junio 2024</label></p>
+              </div>
+            </div>
+            <div class="row pt-5 ps-5" style="height: 40%;">
+              <div class="col-12">
+                <p><label class="top-text" style="font-weight: bold; font-size: 6rem;">Sensor de Humedad</label></p>
+              </div>
+            </div>
+            <div class="row ps-5">
+              <div class="col-12 px-0">
+                <p class="my-0"><label class="degrees-label">{{humidity}}% Hr</label></p>
+                <p class="location-text" style="z-index: 2; position: relative;"><label class="normal-text ps-3">Facultad de Ingenieria, T-3</label></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-5 d-grid align-items-center px-5 py-5 bkg-white">
+        <div class="row w-100 pt-2 separator pb-3" *ngFor="let data of quantities; let i = index">
+          <div class="col-2 d-grid align-items-start">
+            <span><fa-icon [icon]="data.icon" size="lg" class="icon-color-weather"></fa-icon></span>
+          </div>
+          <div class="col-10">
+            <div class="row">
+              <div class="col-12 d-grid align-items-start"><span class="calc-name">{{data.name}}</span></div>
+            </div>
+            <div class="row">
+              <div class="col-6 d-grid justify-content-start align-items-end">
+                <span class="calc-value">{{data.value}}</span>
+              </div>
+              <div class="col-6 d-grid justify-content-end align-items-end">
+                <span class="calc-date">{{data.date}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
